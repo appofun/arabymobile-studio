@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    Araby Mobile Studio — index.html
+    Landing page for arabymobile.com
+    Hosted on GitHub Pages (static, no backend)
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO META TAGS ── -->
+  <title>Araby Mobile Studio - Android Apps, Wallpapers &amp; Mobile Themes</title>
+  <meta name="description" content="Araby Mobile Studio creates premium Android apps, mobile wallpapers, Samsung themes, icon packs, and HTML5 games for Arabic and global mobile users." />
+  <meta name="keywords" content="Android apps, mobile wallpapers, Samsung themes, icon packs, HTML5 games, Arabic mobile apps, Android design, mobile UI, Araby Mobile" />
+  <meta name="author" content="Araby Mobile Studio" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:title" content="Araby Mobile Studio - Android Apps, Wallpapers &amp; Mobile Themes" />
+  <meta property="og:description" content="Araby Mobile Studio creates premium Android apps, mobile wallpapers, Samsung themes, icon packs, and HTML5 games for Arabic and global mobile users." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arabymobile.com" />
+  <meta property="og:site_name" content="Araby Mobile Studio" />
+
+  <!-- ── FAVICON PLACEHOLDER ──
+    Replace these with your actual favicon files.
+    Recommended: generate at https://realfavicongenerator.net
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  ── -->
+
+  <!-- ── GOOGLE FONTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ── STYLESHEET ── -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================================================
+    HEADER / NAVBAR
+  ================================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Araby <span class="logo-accent">Mobile</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"      class="nav-link">Home</a></li>
+        <li><a href="#products"  class="nav-link">Products</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="#home"      class="mobile-nav-link">Home</a></li>
+      <li><a href="#products"  class="mobile-nav-link">Products</a></li>
+      <li><a href="#services"  class="mobile-nav-link">Services</a></li>
+      <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+      <li><a href="#contact"   class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary mobile-cta">Contact Us</a>
+  </div>
+
+  <!-- ================================================================
+    MAIN CONTENT
+  ================================================================ -->
+  <main>
+
+    <!-- ── HERO SECTION ── -->
+    <section class="hero" id="home">
+
+      <!-- Background glow blobs -->
+      <div class="hero-bg">
+        <div class="glow-blob glow-blob--cyan"></div>
+        <div class="glow-blob glow-blob--gold"></div>
+        <div class="glow-blob glow-blob--purple"></div>
+      </div>
+
+      <div class="container hero-inner">
+
+        <!-- Left: Text content -->
+        <div class="hero-content fade-in">
+
+          <!-- Badge -->
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Mobile Apps • Wallpapers • Themes
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero-title">
+            Premium Android Apps,<br />
+            <span class="text-gradient-cyan">Wallpapers</span> &amp;
+            <span class="text-gradient-gold">Mobile Themes</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle">
+            Araby Mobile Studio creates modern Android apps, premium mobile wallpapers,
+            Samsung themes, icon packs, and lightweight HTML5 games for Arabic users
+            and global Android audiences.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta">
+            <a href="#products" class="btn btn-primary btn-lg">
+              <span>Explore Products</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-lg">Contact Us</a>
+          </div>
+
+          <!-- Trust text -->
+          <p class="hero-trust">
+            <svg class="trust-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Designed for Android users, creators, and digital product brands.
+          </p>
+
+        </div>
+
+        <!-- Right: Phone Mockup -->
+        <div class="hero-visual fade-in fade-in--delay">
+          <div class="phone-wrap">
+
+            <!-- Glow rings behind phone -->
+            <div class="phone-glow"></div>
+            <div class="phone-glow phone-glow--2"></div>
+
+            <!-- Phone frame -->
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+
+                <!-- Wallpaper preview strip -->
+                <div class="phone-wallpaper-strip">
+                  <div class="wp wp-1"></div>
+                  <div class="wp wp-2"></div>
+                  <div class="wp wp-3"></div>
+                </div>
+
+                <!-- App cards inside phone -->
+                <div class="phone-apps">
+                  <div class="phone-app-card">
+                    <div class="app-icon app-icon--cyan">◈</div>
+                    <span>ArabMap</span>
+                  </div>
+                  <div class="phone-app-card">
+                    <div class="app-icon app-icon--gold">✦</div>
+                    <span>Themes</span>
+                  </div>
+                  <div class="phone-app-card">
+                    <div class="app-icon app-icon--purple">⬡</div>
+                    <span>WallKit</span>
+                  </div>
+                  <div class="phone-app-card">
+                    <div class="app-icon app-icon--green">▶</div>
+                    <span>MiniGame</span>
+                  </div>
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="phone-bar">
+                  <span class="phone-bar-dot"></span>
+                  <span class="phone-bar-dot phone-bar-dot--active"></span>
+                  <span class="phone-bar-dot"></span>
+                </div>
+
+              </div>
+              <div class="phone-home-indicator"></div>
+            </div>
+
+            <!-- Floating tag chips -->
+            <div class="float-chip float-chip--top">
+              <span>🎨</span> Samsung Themes
+            </div>
+            <div class="float-chip float-chip--bottom">
+              <span>📱</span> Android Apps
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── STATS SECTION ── -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+
+          <div class="stat-card fade-in">
+            <div class="stat-num text-gradient-cyan">10+</div>
+            <div class="stat-label">Apps &amp; Tools</div>
+            <div class="stat-sub">Android Apps</div>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-num text-gradient-gold">500+</div>
+            <div class="stat-label">Wallpaper Concepts</div>
+            <div class="stat-sub">Premium Wallpapers</div>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-num text-gradient-cyan">50+</div>
+            <div class="stat-label">Theme Assets</div>
+            <div class="stat-sub">Samsung Themes</div>
+          </div>
+
+          <div class="stat-card fade-in">
+            <div class="stat-num text-gradient-gold">100%</div>
+            <div class="stat-label">Static Website Ready</div>
+            <div class="stat-sub">HTML5 Games</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCTS SECTION ── -->
+    <section class="products section" id="products">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-tag">What We Build</span>
+          <h2 class="section-title">Our Digital <span class="text-gradient-cyan">Products</span></h2>
+          <p class="section-subtitle">From utility apps to stunning visual assets — everything we make is built for the mobile-first world.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 class="product-title">Android Apps</h3>
+            <p class="product-desc">Lightweight, useful Android apps built with clean UI and practical features.</p>
+            <div class="product-tag">Google Play Ready</div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="product-title">Mobile Wallpapers</h3>
+            <p class="product-desc">Premium wallpapers for Android screens, AMOLED displays, and modern mobile themes.</p>
+            <div class="product-tag">4K · AMOLED</div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M21 12h-2M5 12H3M19.07 19.07l-1.41-1.41M6.34 6.34 4.93 4.93M12 21v-2M12 5V3"/></svg>
+            </div>
+            <h3 class="product-title">Samsung Themes</h3>
+            <p class="product-desc">Custom Samsung themes, icon packs, lock screens, and home screen visuals.</p>
+            <div class="product-tag">Galaxy Store</div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9.5" y="2" width="5" height="5" rx="1"/><rect x="17" y="2" width="5" height="5" rx="1"/><rect x="2" y="9.5" width="5" height="5" rx="1"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><rect x="17" y="9.5" width="5" height="5" rx="1"/><rect x="2" y="17" width="5" height="5" rx="1"/><rect x="9.5" y="17" width="5" height="5" rx="1"/><rect x="17" y="17" width="5" height="5" rx="1"/></svg>
+            </div>
+            <h3 class="product-title">Icon Packs</h3>
+            <p class="product-desc">High-quality icon packs for mobile customization and digital stores.</p>
+            <div class="product-tag">1000+ Icons</div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <h3 class="product-title">HTML5 Games</h3>
+            <p class="product-desc">Simple browser games and mobile-friendly gaming experiences.</p>
+            <div class="product-tag">Browser · Mobile</div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-icon product-icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="product-title">UI Design</h3>
+            <p class="product-desc">Modern interface designs for apps, dashboards, and landing pages.</p>
+            <div class="product-tag">Mobile-First</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES SECTION ── -->
+    <section class="services section" id="services">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-tag">Our Work</span>
+          <h2 class="section-title">What We Can <span class="text-gradient-gold">Create</span></h2>
+          <p class="section-subtitle">
+            From concept to polished digital product, Araby Mobile Studio focuses on clean design,
+            mobile-first layouts, and premium visual quality.
+          </p>
+        </div>
+
+        <div class="services-layout">
+
+          <!-- Left: Service list -->
+          <div class="services-list fade-in">
+            <div class="service-item" data-index="1">
+              <div class="service-num">01</div>
+              <div class="service-info">
+                <h3>Android App Design</h3>
+                <p>Clean, intuitive Android apps with modern Material Design principles.</p>
+              </div>
+            </div>
+            <div class="service-item" data-index="2">
+              <div class="service-num">02</div>
+              <div class="service-info">
+                <h3>Wallpaper Pack Creation</h3>
+                <p>AMOLED-optimized, 4K-ready wallpaper packs for mobile stores.</p>
+              </div>
+            </div>
+            <div class="service-item" data-index="3">
+              <div class="service-num">03</div>
+              <div class="service-info">
+                <h3>Samsung Theme Design</h3>
+                <p>Full Galaxy Store theme packages — icons, lock screen, widgets, and more.</p>
+              </div>
+            </div>
+            <div class="service-item" data-index="4">
+              <div class="service-num">04</div>
+              <div class="service-info">
+                <h3>Icon Pack Design</h3>
+                <p>Consistent, premium icon sets ready for Google Play and Galaxy Store.</p>
+              </div>
+            </div>
+            <div class="service-item" data-index="5">
+              <div class="service-num">05</div>
+              <div class="service-info">
+                <h3>Landing Page Design</h3>
+                <p>High-converting product landing pages built for apps and digital products.</p>
+              </div>
+            </div>
+            <div class="service-item" data-index="6">
+              <div class="service-num">06</div>
+              <div class="service-info">
+                <h3>Mobile UI Redesign</h3>
+                <p>Modernize existing apps with refreshed visual design and better UX flows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Info panel -->
+          <div class="services-panel fade-in fade-in--delay">
+            <div class="services-panel-inner">
+              <div class="panel-badge">Why Araby Mobile?</div>
+              <h3>Built for the<br /><span class="text-gradient-cyan">Mobile Ecosystem</span></h3>
+              <p>Every product we create is designed with the Google Play Store, Samsung Galaxy Store, and modern Android users in mind. We understand mobile-first design deeply.</p>
+              <ul class="panel-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  Google Play Store ready
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  Samsung Galaxy Store compatible
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  AMOLED &amp; responsive-first
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                  Arabic &amp; global audiences
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Start a Project</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PORTFOLIO / SHOWCASE SECTION ── -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-tag">Our Work</span>
+          <h2 class="section-title">Featured <span class="text-gradient-cyan">Concepts</span></h2>
+          <p class="section-subtitle">A preview of the type of products we design and build for mobile audiences worldwide.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- Card 1: Luxury Wallpapers -->
+          <div class="portfolio-card fade-in" style="--card-delay: 0ms;">
+            <div class="portfolio-preview portfolio-preview--luxury">
+              <div class="preview-label">Preview</div>
+              <!-- CSS art: layered gradient wallpaper look -->
+              <div class="pp-art pp-art--luxury">
+                <div class="pp-layer"></div>
+                <div class="pp-layer pp-layer--2"></div>
+                <div class="pp-shimmer"></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Wallpapers</span>
+              <h3>Luxury Wallpapers</h3>
+              <p>Gold-tone premium wallpaper series for AMOLED Android screens.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Anime Mobile Themes -->
+          <div class="portfolio-card fade-in" style="--card-delay: 80ms;">
+            <div class="portfolio-preview portfolio-preview--anime">
+              <div class="preview-label">Preview</div>
+              <div class="pp-art pp-art--anime">
+                <div class="pp-circle"></div>
+                <div class="pp-circle pp-circle--2"></div>
+                <div class="pp-lines">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Samsung Theme</span>
+              <h3>Anime Mobile Themes</h3>
+              <p>Vibrant anime-inspired Samsung theme with custom icon pack.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: AMOLED Backgrounds -->
+          <div class="portfolio-card fade-in" style="--card-delay: 160ms;">
+            <div class="portfolio-preview portfolio-preview--amoled">
+              <div class="preview-label">Preview</div>
+              <div class="pp-art pp-art--amoled">
+                <div class="pp-star" style="--x:20%;--y:30%"></div>
+                <div class="pp-star" style="--x:70%;--y:20%"></div>
+                <div class="pp-star" style="--x:50%;--y:65%"></div>
+                <div class="pp-star" style="--x:80%;--y:70%"></div>
+                <div class="pp-star" style="--x:35%;--y:55%"></div>
+                <div class="pp-star pp-star--big" style="--x:60%;--y:45%"></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Wallpapers</span>
+              <h3>AMOLED Backgrounds</h3>
+              <p>Pure-black AMOLED backgrounds that save battery and look stunning.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Educational Apps -->
+          <div class="portfolio-card fade-in" style="--card-delay: 240ms;">
+            <div class="portfolio-preview portfolio-preview--edu">
+              <div class="preview-label">Preview</div>
+              <div class="pp-art pp-art--edu">
+                <div class="pp-phone-mini">
+                  <div class="pp-ui-bar"></div>
+                  <div class="pp-ui-bar pp-ui-bar--sm"></div>
+                  <div class="pp-ui-bar pp-ui-bar--sm" style="width:55%"></div>
+                  <div class="pp-ui-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Android App</span>
+              <h3>Educational Apps</h3>
+              <p>Interactive learning apps for Arabic-speaking mobile users.</p>
+            </div>
+          </div>
+
+          <!-- Card 5: HTML5 Games -->
+          <div class="portfolio-card fade-in" style="--card-delay: 320ms;">
+            <div class="portfolio-preview portfolio-preview--game">
+              <div class="preview-label">Preview</div>
+              <div class="pp-art pp-art--game">
+                <div class="pp-game-grid">
+                  <span class="g-cell g-cell--active"></span>
+                  <span class="g-cell"></span>
+                  <span class="g-cell g-cell--active"></span>
+                  <span class="g-cell"></span>
+                  <span class="g-cell g-cell--gold"></span>
+                  <span class="g-cell"></span>
+                  <span class="g-cell"></span>
+                  <span class="g-cell g-cell--active"></span>
+                  <span class="g-cell"></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">HTML5 Game</span>
+              <h3>HTML5 Games</h3>
+              <p>Lightweight browser-based games optimized for mobile screens.</p>
+            </div>
+          </div>
+
+          <!-- Card 6: Icon Pack Collections -->
+          <div class="portfolio-card fade-in" style="--card-delay: 400ms;">
+            <div class="portfolio-preview portfolio-preview--icons">
+              <div class="preview-label">Preview</div>
+              <div class="pp-art pp-art--icons">
+                <div class="pp-icon-grid">
+                  <span class="pi-box" style="--c:#00D4FF">◈</span>
+                  <span class="pi-box" style="--c:#F4B942">✦</span>
+                  <span class="pi-box" style="--c:#A855F7">⬡</span>
+                  <span class="pi-box" style="--c:#22C55E">▶</span>
+                  <span class="pi-box" style="--c:#F43F5E">◉</span>
+                  <span class="pi-box" style="--c:#00D4FF">⊕</span>
+                  <span class="pi-box" style="--c:#F4B942">◆</span>
+                  <span class="pi-box" style="--c:#A855F7">⬟</span>
+                  <span class="pi-box" style="--c:#22C55E">❖</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Icon Pack</span>
+              <h3>Icon Pack Collections</h3>
+              <p>Cohesive icon sets for Android launchers and Samsung themes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY CHOOSE US SECTION ── -->
+    <section class="why section" id="why">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-tag">Our Edge</span>
+          <h2 class="section-title">Built for <span class="text-gradient-gold">Mobile-First</span> Digital Products</h2>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card fade-in">
+            <div class="why-icon why-icon--cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l3 3 5-5"/></svg>
+            </div>
+            <h3>Clean User Experience</h3>
+            <p>
+              Every app and theme we build prioritizes intuitive design. Users on Google Play and the
+              Samsung Galaxy Store expect clean interfaces — we deliver exactly that, optimized for Android
+              screens of all sizes.
+            </p>
+          </div>
+
+          <div class="why-card why-card--featured fade-in">
+            <div class="why-icon why-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Premium Visual Style</h3>
+            <p>
+              Our visual language is sharp, modern, and premium. Whether it's mobile wallpapers for AMOLED
+              displays, Samsung theme packages, or icon packs — every pixel is crafted with attention to
+              mobile customization trends and user expectations.
+            </p>
+            <div class="why-badge">Core Value</div>
+          </div>
+
+          <div class="why-card fade-in">
+            <div class="why-icon why-icon--cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Ready for Digital Stores</h3>
+            <p>
+              Products designed to meet Google Play, Samsung Galaxy Store, and digital marketplace
+              requirements. Responsive design, proper sizing, and metadata-ready assets — built for
+              real publishing and mobile customization communities.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="text-gradient-cyan">Mobile</span></h2>
+          <p class="section-subtitle">
+            For apps, wallpapers, themes, icon packs, or custom mobile design work,
+            contact Araby Mobile Studio.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Contact Cards -->
+          <div class="contact-cards fade-in">
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Email</span>
+                <!-- Replace with your actual email -->
+                <a href="mailto:contact@arabymobile.com" class="contact-card-value">contact@arabymobile.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Website</span>
+                <span class="contact-card-value">arabymobile.com</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Digital Studio</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap fade-in fade-in--delay">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+              </div>
+              <!-- Form button — triggers JS alert (GitHub Pages has no backend) -->
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+    FOOTER
+  ================================================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">Araby <span class="logo-accent">Mobile</span></span>
+          </a>
+          <p class="footer-desc">
+            Premium Android apps, mobile wallpapers, Samsung themes, icon packs,
+            and HTML5 games — built for Arabic users and global mobile audiences.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Android Apps</a></li>
+            <li><a href="#products">Mobile Wallpapers</a></li>
+            <li><a href="#products">Samsung Themes</a></li>
+            <li><a href="#products">Icon Packs</a></li>
+            <li><a href="#products">HTML5 Games</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <!-- Placeholder links — replace with real pages when ready -->
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Araby Mobile Studio. All rights reserved.</p>
+        <p class="footer-built">Built for the mobile-first world.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ── BACK TO TOP BUTTON ── -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ── SCRIPT ── -->
+  <script src="script.js"></script>
+</body>
+</html>
