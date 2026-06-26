@@ -1393,3 +1393,110 @@ ul  { list-style: none; }
 
   .section-title { font-size: 26px; }
 }
+
+/* ================================================================
+  LANGUAGE TOGGLE BUTTON
+================================================================ */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(0, 212, 255, 0.07);
+  border: 1px solid var(--border-cyan);
+  border-radius: 100px;
+  color: var(--cyan);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.lang-toggle:hover {
+  background: var(--cyan-dim);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+}
+
+/* ================================================================
+  RTL — Arabic layout overrides
+  Applied when <html dir="rtl"> is set by JS
+================================================================ */
+
+/* Body font for Arabic */
+[dir="rtl"] body {
+  font-family: 'Cairo', 'Inter', Arial, sans-serif;
+}
+
+/* Flip text alignment where needed */
+[dir="rtl"] .hero-content { text-align: right; }
+[dir="rtl"] .hero-subtitle { margin-left: 0; margin-right: 0; }
+[dir="rtl"] .hero-cta { justify-content: flex-start; }
+[dir="rtl"] .hero-trust { justify-content: flex-start; }
+
+/* Swap phone chip positions */
+[dir="rtl"] .float-chip--top    { right: auto; left: -24px; }
+[dir="rtl"] .float-chip--bottom { left: auto; right: -24px; }
+
+/* Section header stays centered — no change needed */
+
+/* Product cards — text right-aligned */
+[dir="rtl"] .product-title,
+[dir="rtl"] .product-desc { text-align: right; }
+
+/* Service items */
+[dir="rtl"] .service-num { text-align: right; }
+[dir="rtl"] .service-info h3,
+[dir="rtl"] .service-info p { text-align: right; }
+
+/* Services panel list — flip icon direction */
+[dir="rtl"] .panel-list li { flex-direction: row-reverse; }
+[dir="rtl"] .panel-list li svg { margin-left: 0; }
+
+/* Contact card slide direction */
+[dir="rtl"] .contact-card:hover { transform: translateX(-4px); }
+
+/* Footer bottom */
+[dir="rtl"] .footer-bottom { flex-direction: row-reverse; }
+
+/* Stat numbers — larger on Arabic */
+[dir="rtl"] .stat-num { letter-spacing: 0; }
+
+/* Why cards */
+[dir="rtl"] .why-card h3,
+[dir="rtl"] .why-card p { text-align: right; }
+
+/* Hero CTA button arrow — flip direction for RTL */
+[dir="rtl"] .btn svg {
+  transform: scaleX(-1);
+}
+
+/* Portfolio info */
+[dir="rtl"] .portfolio-info h3,
+[dir="rtl"] .portfolio-info p { text-align: right; }
+
+/* Form */
+[dir="rtl"] .form-group label { text-align: right; }
+
+/* Footer */
+[dir="rtl"] .footer-desc { text-align: right; }
+[dir="rtl"] .footer-links { text-align: right; }
+[dir="rtl"] .footer-copy,
+[dir="rtl"] .footer-built { text-align: right; }
+
+/* Section tags center — already centered, fine */
+
+/* On tablet/mobile, hero was already stacked centered, keep it */
+@media (max-width: 1024px) {
+  [dir="rtl"] .hero-content { text-align: center; }
+  [dir="rtl"] .hero-cta { justify-content: center; }
+  [dir="rtl"] .hero-trust { justify-content: center; }
+  [dir="rtl"] .float-chip--top    { right: auto; left: -10px; }
+  [dir="rtl"] .float-chip--bottom { left: auto; right: -10px; }
+}
+
+/* Nav actions gap on mobile */
+@media (max-width: 640px) {
+  .lang-toggle { padding: 4px 10px; font-size: 11px; }
+}
